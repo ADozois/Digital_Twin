@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/ADozois/Digital_Twin/issues"
   },
-  "homepage": "https://github.com/ADozois/Digital_Twin#readme"
+  "homepage": "https://github.com/ADozois/Digital_Twin#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "influx": "^5.0.7",
+    "moment": "^2.22.2"
+  }
 }
