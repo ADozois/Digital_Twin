@@ -3,9 +3,10 @@ const status = require('./status')
 
 class Device {
 
-    constructor(deviceId, name){
+    constructor(deviceId, name, ipAdress){
         this.deviceId = deviceId;
         this.name = name;
+        this.ip = ipAdress;
         this.status = status.CONNECTED;
         this.lastUpdated = moment().format();
         this.properties = {
@@ -19,6 +20,10 @@ class Device {
     }
 
     getStatus(){
+        return this.status;
+    }
+
+    getName(){
         return this.status;
     }
 
