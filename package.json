@@ -4,7 +4,8 @@
   "description": "Digital twin implementation in node",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test-unit": "NODE_ENV=test mocha 'test/*.spec.js'"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,18 @@
   },
   "homepage": "https://github.com/ADozois/Digital_Twin#readme",
   "dependencies": {
+    "chai": "^4.2.0",
+    "crypto": "^1.0.1",
     "express": "^4.16.4",
     "influx": "^5.0.7",
-    "moment": "^2.22.2"
+    "ip": "^1.1.5",
+    "mocha": "^5.2.0",
+    "mocka": "0.0.1",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.9",
+    "mqtt": "^2.18.8",
+    "redis": "^2.8.0",
+    "sinon": "^7.1.1",
+    "sleep": "^5.2.3"
   }
 }
