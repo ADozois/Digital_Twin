@@ -2,7 +2,7 @@
 class TimeoutManager{
     constructor(){
         this.list = [];
-        this.interval = 10000; //5 minutes
+        this.interval = 300000; //5 minutes
         var t = this;
         this.garbageInterval = setInterval(function(){t.collectGarbage();}, this.interval) 
     }
